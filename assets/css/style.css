@@ -1,85 +1,116 @@
-/* Estilos generales */
 body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #1C94EA, #123456);
-    background-size: cover;
-    background-attachment: fixed;
-    margin: 0;
+
+    background: url('../img/codigo.svg'), linear-gradient(orangered 0%, #041832 33.33%, #041832 66.67%, orange 100%);
+
+
+    background-size: auto;
+    background-repeat: no-repeat;
+    /* Hace que la imagen cubra todo el área del elemento */
+    background-position: right;
     min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+input[type="text"],
+input[type="number"] {
+    font-size: 1rem;
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 40px;
+    width: fit-content;
+    background-color: orangered;
+    color: #fff;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: red;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+    max-height: fit-content;
+    overflow-y: auto;
+    width: 100%;
+}
+
+ul li {
+    padding: 10px;
+    background-color: #041832;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+}
+
+ul li:last-child {
+    border-bottom: none;
 }
 
 .main-container {
     display: flex;
     justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+    top: 110px;
+    left: 120px;
+    width: 1200px;
+    min-height: 80vh;
+    margin: 0px auto;
     padding: 20px;
+    background: linear-gradient(0deg, rgba(20, 68, 128, 0.3), rgba(20, 68, 128, 0.3)),
+        linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05));
+
+    border-radius: 24px;
+    color: white;
+    box-shadow: 4px 4px 20px 0px #01080E26;
+    border: 1px solid goldenrod
 }
 
 .container {
-    background-color: rgba(255, 255, 255, 0.9);
-    padding: 20px;
-    border-radius: 10px;
-    max-width: 500px;
-    width: 100%;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    gap: 45px;
+    width: 860px;
+    align-items: center;
+    flex-direction: column;
+    padding: 45px;
+    opacity: 0px;
 }
 
 .img-container {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.img-container img {
+    width: 50%;
 }
 
 .form-group {
     display: flex;
     flex-direction: column;
-    margin-top: 20px;
-}
-
-.form-group input {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
-}
-
-.form-group button {
-    padding: 10px;
-    background-color: #FFA500; /* Color hexadecimal para "orange" */
-    border: none;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.form-group button:hover {
-    background-color: #ff9933;
-}
-
-ul#listaDeGastos {
-    list-style-type: none;
-    padding: 0;
-}
-
-ul#listaDeGastos li {
-    background-color: #f9f9f9;
-    margin-bottom: 10px;
-    padding: 10px;
-    border-radius: 5px;
-    display: flex;
-    justify-content: space-between;
+    width: 50%;
     align-items: center;
-    flex-wrap: wrap;
+    gap: 20px;
 }
 
-ul#listaDeGastos li button {
-    background-color: #FF4D4D;
-    border: none;
-    color: white;
-    padding: 5px 10px;
-    border-radius: 5px;
-    cursor: pointer;
+.total {
+    margin-top: 20px;
+    font-size: 24px;
+    text-align: center;
+    color: #fff;
+
 }
 
 /* Ajustes para dispositivos móviles */
