@@ -118,7 +118,7 @@ ul li:last-child {
 @media (max-width: 600px) {
     .container {
         padding: 15px;
-        max-width: 90%; 
+        max-width: 100%; 
     }
     
     ul#listaDeGastos li {
@@ -131,7 +131,7 @@ ul li:last-child {
     }
 
     .form-group input, .form-group button {
-        width: 90%;
+        width: 60%;
     }
 }
 
@@ -150,7 +150,7 @@ ul li:last-child {
     border-radius: 5px;
     cursor: pointer;
     margin-top: 10px;
-    width: 100%;
+    width: 60%;
 }
 
 .clean-btn:hover {
